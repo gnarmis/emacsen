@@ -1,0 +1,15 @@
+emacs-config/.emacs.d/backups
+emacs-config/.emacs.d/elpa
+emacs-config/.emacs.d/auto-save-list
+emacs-config/.emacs.d/ido.last
+emacs-config/.emacs.d/places
+emacs-config/.emacs.d/recentf
+emacs-config/.emacs.d/url
+emacs-config/.emacs.d/.smex-items
+emacs-config/.emacs.d/bookmarks
+emacs-config/.emacs.d/eshell
+emacs-config/.emacs.d/.cask
+emacs-config/.emacs.d/projectile-bookmarks.eld*
+emacs-config/.emacs.d/recentf*
+emacs-config/.emacs.d/ido.last~
+*~

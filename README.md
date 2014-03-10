@@ -5,13 +5,19 @@ setup Emacs as your primary editor.
 
 ## Preparation
 
+* Assumption: You're using OSX or some *nix OS. Emacs works on almost
+  everything, but you'll have to explore yourself.
+
 * You only need three text files to make your entire Emacs
   portable and flexible: `.emacs.d/init.el`, `.emacs`, and
   `.emacs.d/Cask`.
 
-* Link everything in `./emacs-config` to `$HOME`:
+* Symlink some files in `./emacs-config` to `$HOME`:
   - `ln -s $PWD/emacs-config/.emacs ~`
   - `ln -s $PWD/emacs-config/.emacs.d ~`
+  - `ln -s $PWD/emacs-config/.emacs_zsh ~` (loads `~/.profile`,
+    allowing Emacs to know your entire shell environment, if you use
+    `zsh`. Bash is similar; just rename it to `.emacs_bash`).
 
 * You now have all the configuration files setup. Time to install
   Emacs and friends.
@@ -50,7 +56,7 @@ portable without a headache.
 * Learn how to use help in Emacs.
 
 * Try working on a project entirely in Emacs, including using
-  terminal inside it.
+  terminal inside it. Use `M-x multi-term`.
   
 
 ## Notes about this configuration
