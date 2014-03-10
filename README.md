@@ -1,4 +1,4 @@
-# Kilotau Emacs Config #
+# Emacsen #
 
 This project aims to provide configuration files and instructions to
 setup Emacs as your primary editor.
