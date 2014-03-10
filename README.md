@@ -5,9 +5,16 @@ setup Emacs as your primary editor.
 
 ## Preparation
 
-* Install Cask, an emacs package installation tool. It greatly
-  simplifies your configuration and helps you declaratively define the
-  dependencies of your Emacs setup.
+* You only need three text files to make your entire Emacs
+  portable and flexible: `.emacs.d/init.el`, `.emacs`, and
+  `.emacs.d/Cask`.
+
+* Link everything in `./emacs-config` to `$HOME`:
+  - `ln -s $PWD/emacs-config/.emacs ~`
+  - `ln -s $PWD/emacs-config/.emacs.d ~`
+
+* You now have all the configuration files setup. Time to install
+  Emacs and friends.
 
 ## Emacs
 
@@ -22,19 +29,14 @@ setup Emacs as your primary editor.
 
         curl -fsSkL https://raw.github.com/cask/cask/master/go | python
 
-
-## Setup Emacs
-
-- Copy, or better yet symlink, the `.emacs` file and the `.emacs.d`
-  directory to your home directory.
-
-- Inside your `.emacs.d` directory:
-
-        cask install
+This is an Emacs package installation tool. It keeps your
+`.emacs.d/init.el` nice and clean, and keeps your dependencies
+portable without a headache.
 
 ### Emacs Keybindings for OSX
 
-- move `./DefaultKeyBinding.dict` to `~/Library/KeyBindings/` and restart
+- move `./DefaultKeyBinding.dict` to `~/Library/KeyBindings/` and
+  restart OSX
 
 
 ## Learn Basics
