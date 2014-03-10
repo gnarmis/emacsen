@@ -36,28 +36,37 @@ setup Emacs as your primary editor.
         curl -fsSkL https://raw.github.com/cask/cask/master/go | python
 
 This is an Emacs package installation tool. It keeps your
-`.emacs.d/init.el` nice and clean, and keeps your dependencies
+`~/.emacs.d/init.el` nice and clean, and keeps your dependencies
 portable without a headache.
+
+- First time setup of your packages: `cd ~/.emacs.d && cask install`.
 
 ### Emacs Keybindings for OSX
 
-- move `./DefaultKeyBinding.dict` to `~/Library/KeyBindings/` and
-  restart OSX
+- `mv ./emacs-config/DefaultKeyBinding.dict ~/Library/KeyBindings/`
+  and restart OSX
 
 
 ## Learn Basics
 
-* Go through the Emacs tutorial.
+* M = Meta key (alt), C = Control key. `M-x` allows you to enter
+  commands.
+
+* Learn how to use help in Emacs: `M-x help` or `C-h C-h`.
+
+* Peruse active keybindings with `C-c C-h`.
+
+* See what function is called by a keybinding with `C-h k` and typing
+  out the key combination. Do the reverse with `C-h f`.
 
 * Know what buffers, windows, and frames mean in Emacsland.
-
-* Know basic shortcuts (things in the tutorial)
-
-* Learn how to use help in Emacs.
 
 * Try working on a project entirely in Emacs, including using
   terminal inside it. Use `M-x multi-term`.
   
+* Try out `magit` for controlling git within Emacs.
+
+* Perusing Emacs Wiki will help a lot.
 
 ## Notes about this configuration
 
